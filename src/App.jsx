@@ -16,10 +16,9 @@ const App = () => {
 
   const addTask = (text) => {
     if (!text.trim()) return alert("Please enter a task!");
-    const newTask = { id: Date.now(), text, completed: false };
+    const newTask = { id: Date.now(), text, completed: false,createdAt: new Date().toLocaleDateString() };
     setTasks([newTask, ...tasks]);
   };
-
 
   const deleteTask = (id) => {
     setTasks(tasks.filter((t) => t.id !== id));

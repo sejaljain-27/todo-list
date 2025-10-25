@@ -40,6 +40,9 @@ const TodoItem = ({ task, deleteTask, toggleTask, updateTask }) => {
           >
             {task.text}
           </span>
+          <p className="text-xs text-gray-400 px-5 mt-1">
+    Created on: {task.createdAt}
+  </p>
           <div className="flex gap-2">
             <button
               onClick={() => setIsEditing(true)}
