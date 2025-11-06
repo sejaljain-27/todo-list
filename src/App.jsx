@@ -89,8 +89,6 @@ const App = () => {
           />
         </div>
       </main>
-
-      {/* Footer */}
       <footer className="text-center py-4 bg-yellow-100 text-sm text-gray-700 w-full">
         Sejaljain @ all rights reserved.
       </footer>
